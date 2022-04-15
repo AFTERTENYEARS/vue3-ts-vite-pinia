@@ -4,8 +4,8 @@
   "scripts": {
     "lint:eslint": "eslint --fix --ext .js,.ts,.vue ./src",
     "lint:format": "prettier --write --loglevel warn \"src/**/*.{js,ts,json,tsx,css,less,vue,html,md}\"",
-    "dev": "vite --mode development --host",
-    "build": "vue-tsc --mode production --noEmit && vite build",
+    "dev": "vite --host",
+    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

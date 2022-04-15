@@ -20,11 +20,11 @@ onBeforeUnmount(() => {
   console.log('onBeforeUnmount...')
 })
 
-const add = () => {
+const li = () => {
   userStore.updateName('李四')
 }
 
-const sub = () => {
+const zhang = () => {
   userStore.updateName('张三')
 }
 
@@ -35,9 +35,10 @@ const reset = () => {
 
 <template>
   <!-- <HelloWorld msg="123" /> -->
+  <!-- <div>{{state.count}}</div> -->
   <div>{{userStore.name}}</div>
-  <button @click="add">li</button>
-  <button @click="sub">zhang</button>
+  <button @click="li">li</button>
+  <button @click="zhang">zhang</button>
   <button @click="reset">重置</button>
 </template>
 
