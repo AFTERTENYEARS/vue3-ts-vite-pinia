@@ -12,6 +12,10 @@ const routes = [
   {
     path: '/store',
     component: () => import('@/pages/store/index.vue')
+  },
+  {
+    path: '/hook',
+    component: () => import('@/pages/hook/index.vue')
   }
 ]
 

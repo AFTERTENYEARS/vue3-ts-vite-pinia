@@ -8,7 +8,7 @@ export const useUserStore = defineStore({
         }
     },
     actions: {
-        updateName(name: string) {
+        updateName(name: string): void {
             this.name = name
         }
     }
