@@ -1,8 +1,12 @@
-import { reactive } from "vue"
+import { onMounted, reactive } from "vue"
 
 export default () => {
     const state = reactive({
         name: '吴彦祖'
+    })
+
+    onMounted(() => {
+        console.log('user-onMounted...');
     })
 
     const updateName = () => {

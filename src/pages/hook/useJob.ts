@@ -1,8 +1,12 @@
-import { reactive } from "vue"
+import { onMounted, reactive } from "vue"
 
 export default () => {
     const state = reactive({
         job: '司机'
+    })
+
+    onMounted(() => {
+        console.log('job-onMounted...');
     })
 
     const updateJob = () => {
